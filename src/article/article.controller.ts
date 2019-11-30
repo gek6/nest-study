@@ -1,10 +1,13 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get ,Render} from '@nestjs/common';
 
 @Controller('article')
 export class ArticleController {
-  @Get()
-  list(){
-    return 'list'
-  }
-  
+    @Get()
+    @Render("index")
+    list(){
+        return {
+            name:'lane',
+            age:'27'
+        }
+    }
 }

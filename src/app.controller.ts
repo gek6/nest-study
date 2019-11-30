@@ -10,5 +10,13 @@ export class AppController {
     return this.appService.getHello();
   }
 
-
+  @Get('users')
+  getAllUsers() {
+    console.log(123);
+    return {
+      code:200,
+      data:{},
+      msg:'ok'
+    }
+  }
 }
