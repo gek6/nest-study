@@ -12,11 +12,12 @@ export class AppController {
 
   @Get('users')
   getAllUsers() {
+    // tslint:disable-next-line:no-console
     console.log(123);
     return {
-      code:200,
-      data:{},
-      msg:'ok'
-    }
+      code: 200,
+      data: {},
+      msg: 'ok',
+    };
   }
 }
